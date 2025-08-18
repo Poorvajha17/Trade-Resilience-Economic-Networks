@@ -9,7 +9,7 @@ st.subheader("Dataset Preview")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/final_with_indexes.csv")  
+    df = pd.read_csv("data_for_st/final_with_indexes.csv")  
     return df
 
 try:
@@ -22,7 +22,7 @@ try:
                        file_name="final_with_indexes.csv",
                        mime="text/csv")
 
-    st.subheader("Dataset Overview")
+    st.subheader("Feature Engineered Dataset Overview")
 
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Countries", df["ISO3"].nunique())

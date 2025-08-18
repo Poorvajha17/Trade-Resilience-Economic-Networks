@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 import plotly.express as px
 from utils.io_helpers import path_in_data, load_csv_safe, has_forecasts
 

@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 from utils.io_helpers import path_in_data, load_csv_safe
 
 st.title("📁 Overview")
@@ -9,7 +8,7 @@ if df is None:
     st.error("final_cleaned_datasetf.csv not found in /data/")
     st.stop()
 
-st.subheader("Dataset Preview")
+st.subheader("Cleaned Dataset Preview")
 st.dataframe(df.head(50), use_container_width=True)
 
 c1, c2, c3, c4 = st.columns(4)

@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 from utils.io_helpers import path_in_data, load_csv_safe
 from utils.visuals import shock_panels
 
