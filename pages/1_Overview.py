@@ -18,7 +18,6 @@ c2.metric("Years", f"{int(df['Year'].min())}-{int(df['Year'].max())}")
 c3.metric("Rows", len(df))
 c4.metric("Columns", df.shape[1])
 
-# Download option
 csv = df.to_csv(index=False).encode("utf-8")
 st.download_button("Download Dataset",
                        data=csv,

@@ -7,17 +7,15 @@ st.title("🛠️ Feature Engineering")
 
 st.subheader("Dataset Preview")
 
-# Example: load engineered dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/final_with_indexes.csv")  # adjust to your structure
+    df = pd.read_csv("data/final_with_indexes.csv")  
     return df
 
 try:
     df = load_data()
     st.dataframe(df.head(50), use_container_width=True)
 
-    # Download option
     csv = df.to_csv(index=False).encode("utf-8")
     st.download_button("Download Feature Engineered Data",
                        data=csv,
@@ -32,9 +30,6 @@ try:
     c3.metric("Rows", len(df))
     c4.metric("Columns", df.shape[1])
 
-
-
-    # --- Feature Distributions ---
     st.subheader("Feature Distributions")
     num_cols = df.select_dtypes(include=["int64", "float64"]).columns
     if len(num_cols) > 0:
@@ -46,7 +41,6 @@ try:
     else:
         st.info("No numeric columns found for distribution plots.")
 
-    # --- Summary Statistics ---
     st.subheader("📑 Summary Statistics")
     st.dataframe(df.describe().T, use_container_width=True)
 
