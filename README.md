@@ -6,6 +6,8 @@ The Data Premier League (DPL) is a global economic resilience challenge using da
 
 Documentation : https://github.com/Poorvajha17/Trade-Resilience-Economic-Networks/blob/main/info/Documentation-DPL_25.pdf
 
+Video : https://github.com/Poorvajha17/Trade-Resilience-Economic-Networks/blob/main/info/Screen%20Recording%202025-08-18%20at%2010.15.59%E2%80%AFPM.mov
+
 Created By :
 - Dhiksha S.S (23PD07)
 - Poorvajha G (23PD26)
